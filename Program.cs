@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AutomateMailingOfBirForm {
@@ -21,14 +18,16 @@ namespace AutomateMailingOfBirForm {
         }
 
         private static bool ValidLicense() {
-            if (DateTime.Now.Year < V) {
+            if (DateTime.Now.Year < V)
+            {
                 return true;
-            } 
-            else {
+            }
+            else
+            {
                 MessageBox.Show(
                     "Please contact the programer to continue using his program " +
                     "at daviduntalan@gmail.com or +63(927)414-1835. Thank you.",
-                    "Oppsss! This is an intellectual property", 
+                    "Oppsss! This is an intellectual property",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop
                 );
                 return false;
